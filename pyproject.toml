@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "cuemodo"
 version = "0.0.1"
@@ -7,3 +11,6 @@ license = "MIT"
 requires-python = ">=3.10"
 [project.urls]
 Homepage = "https://github.com/cuemodo/cuemodo"
+
+[project.scripts]
+cuemodo = "cuemodo:main"
