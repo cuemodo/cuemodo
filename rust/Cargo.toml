@@ -1,0 +1,11 @@
+[package]
+name = "cuemodo"
+version = "0.0.1"
+edition = "2021"
+description = "Open-source show control: light, sound, video (early development)"
+license = "MIT"
+repository = "https://github.com/cuemodo/cuemodo"
+homepage = "https://github.com/cuemodo/cuemodo"
+readme = "README.md"
+keywords = ["lighting", "dmx", "show-control", "stage", "cue"]
+categories = ["multimedia"]
