@@ -1,0 +1,9 @@
+[project]
+name = "cuemodo"
+version = "0.0.1"
+description = "Open-source show control: light, sound, video (early development)"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+[project.urls]
+Homepage = "https://github.com/cuemodo/cuemodo"
