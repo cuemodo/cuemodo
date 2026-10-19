@@ -1,16 +1,39 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "cuemodo"
-version = "0.0.1"
+dynamic = ["version"]
 description = "Open-source show control: light, sound, video (early development)"
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.10"
+license-files = ["LICENSE"]
+authors = [{ name = "Gaël Jaffrain" }]
+requires-python = ">=3.13"  # Raspberry Pi OS Trixie ships 3.13
+keywords = ["lighting", "dmx", "art-net", "show control", "theatre"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
 [project.urls]
 Homepage = "https://github.com/cuemodo/cuemodo"
 
 [project.scripts]
-cuemodo = "cuemodo:main"
+cuemodo = "cuemodo.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "cuemodo.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

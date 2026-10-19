@@ -1,4 +1,4 @@
-### CueModo
+# CueModo
 
 Open-source show control: light, sound, video (early development)
 
@@ -10,6 +10,20 @@ Some of the goals:
 - one cuelist for the entire show
 - web and terminal clients (on the same machine, or on the same local network)
 
-#### License
+## Install (Developers)
+
+- Install in a virtual environment, with Python 3.13+
+- `[dev]` also install pytest
+- `-e` makes edits takes effect without reinstalling.
+
+```
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
+pytest
+cuemodo --version
+```
+
+## License
 
 MIT, see [LICENSE](LICENSE).
