@@ -1,4 +1,4 @@
-### CueModo
+### Cuemodo
 
 Open-source show control: light, sound, video (early development)
 

@@ -1,4 +1,7 @@
-# CueModo
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/cuemodo-lockup-horizontal-on-dark.svg">
+  <img src="docs/cuemodo-lockup-horizontal-on-light.svg" alt="Cuemodo" width="400">
+</picture>
 
 Open-source show control: light, sound, video (early development)
 
@@ -23,6 +26,13 @@ pip install -e ".[dev]"
 pytest
 cuemodo --version
 ```
+
+## Show files
+
+A show is saved as one JSON file (format version 1 holds the patch: the fixture types used and
+each fixture's number, universe and DMX address). See
+[examples/dance-recital.json](examples/dance-recital.json): six dimmers, four RGB LED pars and two
+RGBW fixtures over two universes.
 
 ## License
 
