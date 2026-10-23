@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/cuemodo-lockup-horizontal-on-dark.svg">
-  <img src="docs/cuemodo-lockup-horizontal-on-light.svg" alt="Cuemodo" width="400">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/cuemodo-lockup-horizontal-on-dark.svg">
+  <img src="docs/images/cuemodo-lockup-horizontal-on-light.svg" alt="Cuemodo" width="400">
 </picture>
 
 Open-source show control: light, sound, video (early development)
