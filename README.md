@@ -29,11 +29,21 @@ cuemodo --version
 
 ## Show files
 
-A show is saved as one JSON file (format version 1 holds the patch: the fixture types used and
-each fixture's number, universe and DMX address). See
-[examples/dance-recital.json](examples/dance-recital.json): six dimmers, four RGB LED pars and two
-RGBW fixtures over two universes.
+A show is saved as one JSON file (format version 1 holds the patch: the fixture types used, and
+the channels you type to select lights, each with one or more fixtures at a universe and DMX
+address). See [examples/dance-recital.json](examples/dance-recital.json): three channels of paired
+dimmers, four RGB LED pars and two RGBW fixtures over two universes.
+
+## The Cuemodo family
+
+Tools from the same project that work on their own, with no Cuemodo needed:
+
+- [Cyc](https://github.com/cuemodo/cyc): turn projectors into one DMX-controlled light (macOS).
 
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+## Credits
+
+Art-Net™ Designed by and Copyright Artistic Licence Engineering Ltd
