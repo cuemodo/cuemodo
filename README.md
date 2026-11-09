@@ -39,6 +39,8 @@ dimmers, four RGB LED pars and two RGBW fixtures over two universes.
 Tools from the same project that work on their own, with no Cuemodo needed:
 
 - [Cyc](https://github.com/cuemodo/cyc): turn projectors into one DMX-controlled light (macOS).
+- [ConsoleLink](https://github.com/cuemodo/consolelink): web interface and Art-Net output for ETC SmartFade ML lighting consoles, over USB (cross-platform).
+
 
 ## License
 
